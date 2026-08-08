@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SumLastTwoDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int n1 = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int n2 = sc.nextInt();
+
+        int lastTwo1 = n1 % 100;
+        int lastTwo2 = n2 % 100;
+
+        int sum = lastTwo1 + lastTwo2;
+
+        System.out.println("Last two digits of first number = " + lastTwo1);
+        System.out.println("Last two digits of second number = " + lastTwo2);
+        System.out.println("Sum = " + sum);
+
+        sc.close();
+    }
+}
